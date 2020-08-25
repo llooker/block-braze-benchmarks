@@ -271,9 +271,9 @@ view: braze_benchmarks_dashboard_core {
           {% elsif platform._parameter_value == 'iOS' and channel._parameter_value == 'Push'  %}
             ${TABLE}."IOS_PUSH_DIRECT_OPEN_RATE"
           {% elsif platform._parameter_value == 'Web' and channel._parameter_value == 'Push' %}
-            NULL
+            ${TABLE}."WEB_PUSH_TOTAL_OPEN_RATE"
           {% else %}
-            NULL
+            (${TABLE}."ANDROID_PUSH_DIRECT_OPEN_RATE"+${TABLE}."IOS_PUSH_DIRECT_OPEN_RATE"+${TABLE}."WEB_PUSH_TOTAL_OPEN_RATE")/3
           {% endif %}
            ;;
     }
@@ -291,7 +291,7 @@ view: braze_benchmarks_dashboard_core {
           {% elsif platform._parameter_value == 'Web' and channel._parameter_value == 'Push' %}
           NULL
           {% else %}
-          NULL
+           (${TABLE}."ANDROID_PUSH_INFLUENCED_OPEN_RATE"+${TABLE}."IOS_PUSH_INFLUENCED_OPEN_RATE")/2
           {% endif %}
           ;;
     }
@@ -309,7 +309,7 @@ view: braze_benchmarks_dashboard_core {
           {% elsif platform._parameter_value == 'Web' and channel._parameter_value == 'Push' %}
           ${TABLE}."WEB_PUSH_TOTAL_OPEN_RATE"
           {% else %}
-          NULL
+          (${TABLE}."ANDROID_PUSH_TOTAL_OPEN_RATE"+${TABLE}."IOS_PUSH_TOTAL_OPEN_RATE"+${TABLE}."WEB_PUSH_TOTAL_OPEN_RATE")/3
           {% endif %}
           ;;
     }
@@ -318,32 +318,20 @@ view: braze_benchmarks_dashboard_core {
       type: average
       value_format_name: percent_2
       group_label: "Email"
-      sql: {% if channel._parameter_value == 'Email' %}
-            ${TABLE}."EMAIL_CLICK_TO_OPEN_RATE"
-            {% else %}
-            NULL
-            {% endif %};;
+      sql: ${TABLE}."EMAIL_CLICK_TO_OPEN_RATE";;
     }
 
     measure: email_unique_click_rate {
       type: average
       value_format_name: percent_2
       group_label: "Email"
-      sql: {% if channel._parameter_value == 'Email' %}
-            ${TABLE}."EMAIL_UNIQUE_CLICK_RATE"
-            {% else %}
-            NULL
-            {% endif %} ;;
+      sql: ${TABLE}."EMAIL_UNIQUE_CLICK_RATE" ;;
     }
 
     measure: email_unique_open_rate {
       type: average
       value_format_name: percent_2
       group_label: "Email"
-      sql: {% if channel._parameter_value == 'Email' %}
-            ${TABLE}."EMAIL_UNIQUE_OPEN_RATE"
-            {% else %}
-            NULL
-            {% endif %};;
+      sql: ${TABLE}."EMAIL_UNIQUE_OPEN_RATE";;
     }
   }
