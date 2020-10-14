@@ -2,7 +2,7 @@
   "label": "Benchmarks by Braze",
   "category_label": "Models",
   "branding": {
-    "image_uri": "block-icons/braze_icon.png",
+    "image_uri": "https://marketplace-api.looker.com/block-icons/braze_icon.png",
     "tagline": "This Looker Block provides dashboards that mimic the functionality of the Braze Benchmarks industry benchmarks product. This Block works with the Snowflake data share to provide more flexible analysis, enable internal data joins to aggregated industry data, help set alerting thresholds, and facilitate what-if projection."
   },
 
