@@ -8,17 +8,17 @@ constant: CONFIG_PROJECT_NAME {
 }
 
 constant: CONNECTION_NAME {
-  value: "benchmarks"
+  value: "staging_benchmarks"
   export: override_required
 }
 
 constant: DATABASE_NAME {
-  value: "BRAZE_BENCHMARKS"
+  value: "BRAZE_BENCHMARKS_2_0"
   export: override_required
 }
 
 constant: SCHEMA_NAME {
-  value: "BRAZE_BENCHMARKS"
+  value: "BRAZE_BENCHMARKS_LOOKER"
   export: override_required
 }
 
