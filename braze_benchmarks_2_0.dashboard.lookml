@@ -1342,17 +1342,17 @@
     col: 0
     width: 12
     height: 7
-  filters:
-  - name: Industry
-    title: Industry
-    type: field_filter
-    default_value: All Industries
-    allow_multiple_values: true
-    required: true
-    ui_config:
-      type: dropdown_menu
-      display: popover
-    model: block_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
-    listens_to_filters: []
-    field: benchmarks_2_0_365_core.industry
+#   filters:
+#   - name: Industry
+#     title: Industry
+#     type: field_filter
+#     default_value: All Industries
+#     allow_multiple_values: true
+#     required: true
+#     ui_config:
+#       type: dropdown_menu
+#       display: popover
+#     model: block_benchmarks_2_0
+#     explore: benchmarks_2_0_365_core
+#     listens_to_filters: []
+#     field: benchmarks_2_0_365_core.industry

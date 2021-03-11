@@ -35,6 +35,7 @@ explore: braze_benchmarks_2_0_daily_retention_core {
   group_label: "Benchmarks 2.0"
   hidden: yes
   label: "Daily Retention Benchmarks"
+  extends: [braze_benchmarks_2_0_daily_retention_config]
   conditionally_filter: {
     filters: [braze_benchmarks_2_0_daily_retention_core.industry: "All Industries"]
     unless: [braze_benchmarks_2_0_daily_retention_core.industry]
@@ -46,6 +47,7 @@ explore: braze_benchmarks_2_0_dow_core {
   group_label: "Benchmarks 2.0"
   hidden: yes
   label: "Engagement Benchmarks Day of Week"
+  extends: [braze_benchmarks_2_0_dow_config]
   conditionally_filter: {
     filters: [braze_benchmarks_2_0_dow_core.industry: "All Industries"]
     unless: [braze_benchmarks_2_0_dow_core.industry]
@@ -57,6 +59,7 @@ explore: braze_benchmarks_2_0_monthly_core {
   group_label: "Benchmarks 2.0"
   hidden: yes
   label: "Engagement Benchmarks Monthly"
+  extends: [braze_benchmarks_2_0_monthly_config]
   conditionally_filter: {
     filters: [braze_benchmarks_2_0_monthly_core.industry: "All Industries"]
     unless: [braze_benchmarks_2_0_monthly_core.industry]
@@ -68,6 +71,7 @@ explore: braze_benchmarks_2_0_monthly_retention_core {
   group_label: "Benchmarks 2.0"
   hidden: yes
   label: "Monthly Retention Benchmarks"
+  extends: [braze_benchmarks_2_0_monthly_retention_config]
   conditionally_filter: {
     filters: [braze_benchmarks_2_0_monthly_retention_core.industry: "All Industries"]
     unless: [braze_benchmarks_2_0_monthly_retention_core.industry]
@@ -79,6 +83,7 @@ explore: braze_benchmarks_2_0_purchase_retention_core {
   group_label: "Benchmarks 2.0"
   hidden: yes
   label: "Purchase Retention Benchmarks"
+  extends: [braze_benchmarks_2_0_purchase_retention_config]
   conditionally_filter: {
     filters: [braze_benchmarks_2_0_purchase_retention_core.industry: "All Industries"]
     unless: [braze_benchmarks_2_0_purchase_retention_core.industry]
@@ -90,6 +95,7 @@ explore: braze_benchmarks_2_0_user_acquisition_core {
   group_label: "Benchmarks 2.0"
   hidden: yes
   label: "User Acquisition Benchmarks"
+  extends: [braze_benchmarks_2_0_user_acquisition_config]
   conditionally_filter: {
     filters: [braze_benchmarks_2_0_user_acquisition_core.industry: "All Industries"]
     unless: [braze_benchmarks_2_0_user_acquisition_core.industry]

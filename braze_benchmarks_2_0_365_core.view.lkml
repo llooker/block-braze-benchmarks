@@ -1,8 +1,8 @@
 include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_365_config.view"
 
-# view: braze_benchmarks_2_0_365_config {
-#   extends: [braze_benchmarks_2_0_365_config]
-# }
+view: braze_benchmarks_2_0_365 {
+  extends: [braze_benchmarks_2_0_365_config]
+}
 
 
 view: braze_benchmarks_2_0_365_core {

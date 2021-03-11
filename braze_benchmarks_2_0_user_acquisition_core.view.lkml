@@ -1,3 +1,5 @@
+include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_user_acquisition_config.view"
+
 view: braze_benchmarks_2_0_user_acquisition_core {
   sql_table_name:  @{DATABASE_NAME}.@{SCHEMA_NAME}."BENCHMARKS_USER_ACQUISITION";;
 
