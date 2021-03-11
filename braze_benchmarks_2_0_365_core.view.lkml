@@ -4,7 +4,6 @@ view: braze_benchmarks_2_0_365 {
   extends: [braze_benchmarks_2_0_365_config]
 }
 
-
 view: braze_benchmarks_2_0_365_core {
   sql_table_name:@{DATABASE_NAME}.@{SCHEMA_NAME}."BRAZE_BENCHMARKS_365" ;;
 

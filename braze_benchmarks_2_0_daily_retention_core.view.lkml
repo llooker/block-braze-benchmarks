@@ -1,5 +1,9 @@
 include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_daily_retention_config.view"
 
+view: braze_benchmarks_2_0_daily_retention {
+  extends: [braze_benchmarks_2_0_daily_retention_config]
+}
+
 view: braze_benchmarks_2_0_daily_retention_core {
   sql_table_name: @{DATABASE_NAME}.@{SCHEMA_NAME}."BENCHMARKS_DAILY_RETENTION";;
 
