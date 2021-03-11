@@ -1,5 +1,5 @@
 - dashboard: braze_benchmarks_2_0
-  title: Braze Benchmarks 2.0
+  title: Benchmarks 2.0
   layout: newspaper
   preferred_viewer: dashboards-next
   elements:
@@ -8,12 +8,12 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
+    explore: braze_benchmarks_2_0_365
     type: single_value
-    fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.android_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_365.industry, braze_benchmarks_2_0_365.android_push_total_open_rate]
     filters:
-      benchmarks_2_0_365_core.android_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_365_core.industry]
+      braze_benchmarks_2_0_365.android_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_365.industry]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -41,7 +41,7 @@
     defaults_version: 1
     series_types: {}
     listen:
-      Industry: benchmarks_2_0_365_core.industry
+      Industry: braze_benchmarks_2_0_365.industry
     row: 6
     col: 8
     width: 8
@@ -51,16 +51,16 @@
     note_display: hover
     note_text: Push Direct Open Rate = Push Direct Opens/(Push Total Sends - Push Bounces), Push Influenced Open Rate = Push Influenced Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_monthly_core
+    explore: braze_benchmarks_2_0_monthly
     type: looker_area
-    fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.android_push_direct_open_rate,
-      benchmarks_2_0_monthly_core.android_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.android_push_direct_open_rate,
+      braze_benchmarks_2_0_monthly.android_push_total_open_rate]
     filters:
-      benchmarks_2_0_monthly_core.android_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_monthly_core.month]
+      braze_benchmarks_2_0_monthly.android_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_monthly.month]
     limit: 500
     dynamic_fields: [{table_calculation: android_push_influenced_open_rate, label: Android
-          Push Influenced Open Rate, expression: "${benchmarks_2_0_monthly_core.android_push_total_open_rate}-${benchmarks_2_0_monthly_core.android_push_direct_open_rate}",
+          Push Influenced Open Rate, expression: "${braze_benchmarks_2_0_monthly.android_push_total_open_rate}-${braze_benchmarks_2_0_monthly.android_push_direct_open_rate}",
         value_format: !!null '', value_format_name: percent_2, _kind_hint: measure,
         _type_hint: number}]
     query_timezone: America/New_York
@@ -93,14 +93,14 @@
     totals_color: "#808080"
     series_types: {}
     series_colors:
-      benchmarks_2_0_monthly_core.android_push_total_open_rate: "#f73b24"
-      benchmarks_2_0_monthly_core.android_push_direct_open_rate: "#f7918f"
+      braze_benchmarks_2_0_monthly.android_push_total_open_rate: "#f73b24"
+      braze_benchmarks_2_0_monthly.android_push_direct_open_rate: "#f7918f"
       android_push_influenced_open_rate: "#f73b24"
     x_axis_datetime_label: "%B %Y"
     defaults_version: 1
-    hidden_fields: [benchmarks_2_0_monthly_core.android_push_total_open_rate]
+    hidden_fields: [braze_benchmarks_2_0_monthly.android_push_total_open_rate]
     listen:
-      Industry: benchmarks_2_0_monthly_core.industry
+      Industry: braze_benchmarks_2_0_monthly.industry
     row: 16
     col: 8
     width: 8
@@ -110,12 +110,12 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_dow_core
+    explore: braze_benchmarks_2_0_dow
     type: looker_column
-    fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.android_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_dow.dow_name, braze_benchmarks_2_0_dow.android_push_total_open_rate]
     filters:
-      benchmarks_2_0_dow_core.android_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_dow_core.dow_name]
+      braze_benchmarks_2_0_dow.android_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_dow.dow_name]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: false
@@ -145,16 +145,16 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: benchmarks_2_0_dow_core.android_push_total_open_rate,
-            id: benchmarks_2_0_dow_core.android_push_total_open_rate, name: Android Push
+    y_axes: [{label: '', orientation: left, series: [{axisId: braze_benchmarks_2_0_dow.android_push_total_open_rate,
+            id: braze_benchmarks_2_0_dow.android_push_total_open_rate, name: Android Push
               Total Open Rate}], showLabels: true, showValues: true, minValue: !!null '',
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     series_types: {}
     series_colors:
-      benchmarks_2_0_dow_core.android_push_total_open_rate: "#f79084"
+      braze_benchmarks_2_0_dow.android_push_total_open_rate: "#f79084"
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_dow_core.industry
+      Industry: braze_benchmarks_2_0_dow.industry
     row: 8
     col: 8
     width: 8
@@ -164,14 +164,14 @@
     note_display: hover
     note_text: Number of users who opened the app on day n after day 0 / the number of users who opened the app on day 0
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_daily_retention_core
+    explore: braze_benchmarks_2_0_daily_retention
     type: looker_line
-    fields: [benchmarks_2_0_daily_retention_core.app_type, benchmarks_2_0_daily_retention_core.day_num,
-      benchmarks_2_0_daily_retention_core.daily_retention]
-    pivots: [benchmarks_2_0_daily_retention_core.app_type]
+    fields: [braze_benchmarks_2_0_daily_retention.app_type, braze_benchmarks_2_0_daily_retention.day_num,
+      braze_benchmarks_2_0_daily_retention.daily_retention]
+    pivots: [braze_benchmarks_2_0_daily_retention.app_type]
     filters:
-      benchmarks_2_0_daily_retention_core.day_num: '1,3,5,7,14,21,30'
-    sorts: [benchmarks_2_0_daily_retention_core.app_type 0, benchmarks_2_0_daily_retention_core.day_num]
+      braze_benchmarks_2_0_daily_retention.day_num: '1,3,5,7,14,21,30'
+    sorts: [braze_benchmarks_2_0_daily_retention.app_type 0, braze_benchmarks_2_0_daily_retention.day_num]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: false
@@ -198,20 +198,20 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: monotone
-    y_axes: [{label: Daily Retention Rate, orientation: left, series: [{axisId: benchmarks_2_0_daily_retention_core.daily_retention,
-            id: Mobile - benchmarks_2_0_daily_retention_core.daily_retention, name: Mobile},
-          {axisId: benchmarks_2_0_daily_retention_core.daily_retention, id: Web - benchmarks_2_0_daily_retention_core.daily_retention,
+    y_axes: [{label: Daily Retention Rate, orientation: left, series: [{axisId: braze_benchmarks_2_0_daily_retention.daily_retention,
+            id: Mobile - braze_benchmarks_2_0_daily_retention.daily_retention, name: Mobile},
+          {axisId: braze_benchmarks_2_0_daily_retention.daily_retention, id: Web - braze_benchmarks_2_0_daily_retention.daily_retention,
             name: Web}], showLabels: true, showValues: true, unpinAxis: false, tickDensity: default,
         tickDensityCustom: 5, type: linear}]
     x_axis_label: Day
     series_colors:
-      web - benchmarks_2_0_daily_retention_core.daily_retention: "#f7918f"
-      mobile - benchmarks_2_0_daily_retention_core.daily_retention: "#3accdd"
-      Web - benchmarks_2_0_daily_retention_core.daily_retention: "#f7918f"
-      Mobile - benchmarks_2_0_daily_retention_core.daily_retention: "#3accdd"
+      web - braze_benchmarks_2_0_daily_retention.daily_retention: "#f7918f"
+      mobile - braze_benchmarks_2_0_daily_retention.daily_retention: "#3accdd"
+      Web - braze_benchmarks_2_0_daily_retention.daily_retention: "#f7918f"
+      Mobile - braze_benchmarks_2_0_daily_retention.daily_retention: "#3accdd"
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_daily_retention_core.industry
+      Industry: braze_benchmarks_2_0_daily_retention.industry
     row: 48
     col: 0
     width: 12
@@ -221,12 +221,12 @@
     note_display: hover
     note_text: Email Unique Opens / Email Deliveries
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
+    explore: braze_benchmarks_2_0_365
     type: single_value
-    fields: [benchmarks_2_0_365_core.email_unique_open_rate, benchmarks_2_0_365_core.industry]
+    fields: [braze_benchmarks_2_0_365.email_unique_open_rate, braze_benchmarks_2_0_365.industry]
     filters:
-      benchmarks_2_0_365_core.email_unique_open_rate: ">0"
-    sorts: [benchmarks_2_0_365_core.industry]
+      braze_benchmarks_2_0_365.email_unique_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_365.industry]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -254,7 +254,7 @@
     defaults_version: 1
     series_types: {}
     listen:
-      Industry: benchmarks_2_0_365_core.industry
+      Industry: braze_benchmarks_2_0_365.industry
     row: 26
     col: 0
     width: 24
@@ -264,10 +264,10 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_dow_core
+    explore: braze_benchmarks_2_0_dow
     type: looker_column
-    fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.ios_push_total_open_rate]
-    sorts: [benchmarks_2_0_dow_core.dow_name]
+    fields: [braze_benchmarks_2_0_dow.dow_name, braze_benchmarks_2_0_dow.ios_push_total_open_rate]
+    sorts: [braze_benchmarks_2_0_dow.dow_name]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: false
@@ -297,16 +297,16 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: benchmarks_2_0_dow_core.ios_push_total_open_rate,
-            id: benchmarks_2_0_dow_core.ios_push_total_open_rate, name: iOS Push Total
+    y_axes: [{label: '', orientation: left, series: [{axisId: braze_benchmarks_2_0_dow.ios_push_total_open_rate,
+            id: braze_benchmarks_2_0_dow.ios_push_total_open_rate, name: iOS Push Total
               Open Rate}], showLabels: true, showValues: true, minValue: !!null '',
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     series_types: {}
     series_colors:
-      benchmarks_2_0_dow_core.ios_push_total_open_rate: "#1e93ff"
+      braze_benchmarks_2_0_dow.ios_push_total_open_rate: "#1e93ff"
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_dow_core.industry
+      Industry: braze_benchmarks_2_0_dow.industry
     row: 8
     col: 0
     width: 8
@@ -316,16 +316,16 @@
     note_display: hover
     note_text: Push Direct Open Rate = Push Direct Opens/(Push Total Sends - Push Bounces), Push Influenced Open Rate = Push Influenced Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_monthly_core
+    explore: braze_benchmarks_2_0_monthly
     type: looker_area
-    fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.ios_push_direct_open_rate,
-      benchmarks_2_0_monthly_core.ios_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.ios_push_direct_open_rate,
+      braze_benchmarks_2_0_monthly.ios_push_total_open_rate]
     filters:
-      benchmarks_2_0_monthly_core.ios_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_monthly_core.month]
+      braze_benchmarks_2_0_monthly.ios_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_monthly.month]
     limit: 500
     dynamic_fields: [{table_calculation: ios_push_influenced_open_rate, label: iOS
-          Push Influenced Open Rate, expression: "${benchmarks_2_0_monthly_core.ios_push_total_open_rate}-${benchmarks_2_0_monthly_core.ios_push_direct_open_rate}",
+          Push Influenced Open Rate, expression: "${braze_benchmarks_2_0_monthly.ios_push_total_open_rate}-${braze_benchmarks_2_0_monthly.ios_push_direct_open_rate}",
         value_format: !!null '', value_format_name: percent_2, _kind_hint: measure,
         _type_hint: number}]
     query_timezone: America/New_York
@@ -358,15 +358,15 @@
     totals_color: "#1e93ff"
     series_types: {}
     series_colors:
-      benchmarks_2_0_monthly_core.ios_push_total_open_rate: "#1e93ff"
-      benchmarks_2_0_monthly_core.ios_push_direct_open_rate: "#3accdd"
+      braze_benchmarks_2_0_monthly.ios_push_total_open_rate: "#1e93ff"
+      braze_benchmarks_2_0_monthly.ios_push_direct_open_rate: "#3accdd"
       ios_push_influenced_open_rate: "#1e93ff"
     x_axis_datetime_label: "%B %Y"
     x_axis_label_rotation: -45
     defaults_version: 1
-    hidden_fields: [benchmarks_2_0_monthly_core.ios_push_total_open_rate]
+    hidden_fields: [braze_benchmarks_2_0_monthly.ios_push_total_open_rate]
     listen:
-      Industry: benchmarks_2_0_monthly.industry
+      Industry: braze_benchmarks_2_0_monthly.industry
     row: 16
     col: 0
     width: 8
@@ -376,12 +376,12 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
+    explore: braze_benchmarks_2_0_365
     type: single_value
-    fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.ios_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_365.industry, braze_benchmarks_2_0_365.ios_push_total_open_rate]
     filters:
-      benchmarks_2_0_365_core.ios_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_365_core.industry]
+      braze_benchmarks_2_0_365.ios_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_365.industry]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -409,7 +409,7 @@
     defaults_version: 1
     series_types: {}
     listen:
-      Industry: benchmarks_2_0_365_core.industry
+      Industry: braze_benchmarks_2_0_365.industry
     row: 6
     col: 0
     width: 8
@@ -419,17 +419,17 @@
     model: block_braze_benchmarks_2_0
     note_display: hover
     note_text: A unique count of users grouped by the platform that each user engaged with on the first day of their app use
-    explore: benchmarks_2_0_user_acquisition_core
+    explore: braze_benchmarks_2_0_user_acquisition
     type: looker_pie
-    fields: [benchmarks_2_0_user_acquisition_core.pct_acquisition, benchmarks_2_0_user_acquisition_core.app_type]
-    sorts: [benchmarks_2_0_user_acquisition_core.pct_acquisition desc]
+    fields: [braze_benchmarks_2_0_user_acquisition.pct_acquisition, braze_benchmarks_2_0_user_acquisition.app_type]
+    sorts: [braze_benchmarks_2_0_user_acquisition.pct_acquisition desc]
     limit: 500
     query_timezone: America/New_York
     value_labels: labels
     label_type: labVal
     series_colors:
-      benchmarks_2_0_user_acquisition_core.pct_mobile_acquisition: "#0759aa"
-      benchmarks_2_0_user_acquisition_core.pct_web_acquisition: "#ff5c69"
+      braze_benchmarks_2_0_user_acquisition.pct_mobile_acquisition: "#0759aa"
+      braze_benchmarks_2_0_user_acquisition.pct_web_acquisition: "#ff5c69"
       Web: "#f7918f"
       Mobile: "#3accdd"
     x_axis_gridlines: false
@@ -462,7 +462,7 @@
     series_types: {}
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_user_acquisition_core.industry
+      Industry: braze_benchmarks_2_0_user_acquisition.industry
     row: 40
     col: 0
     width: 24
@@ -472,14 +472,14 @@
     note_display: hover
     note_text: Number of users in a cohort who opened the app at least once during month n / the number of users who first used the app during month 0
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_monthly_retention_core
+    explore: braze_benchmarks_2_0_monthly_retention
     type: looker_line
-    fields: [benchmarks_2_0_monthly_core_retention.month_num, benchmarks_2_0_monthly_retention_core.monthly_retention,
-      benchmarks_2_0_monthly_retention_core.app_type]
-    pivots: [benchmarks_2_0_monthly_retention_core.app_type]
+    fields: [braze_benchmarks_2_0_monthly_retention.month_num, braze_benchmarks_2_0_monthly_retention.monthly_retention,
+      braze_benchmarks_2_0_monthly_retention.app_type]
+    pivots: [braze_benchmarks_2_0_monthly_retention.app_type]
     filters:
-      benchmarks_2_0_monthly_retention_core.month_num: ">0"
-    sorts: [benchmarks_2_0_monthly_retention_core.monthly_retention desc 0, benchmarks_2_0_monthly_retention_core.app_type]
+      braze_benchmarks_2_0_monthly_retention.month_num: ">0"
+    sorts: [braze_benchmarks_2_0_monthly_retention.monthly_retention desc 0, braze_benchmarks_2_0_monthly_retention.app_type]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: false
@@ -506,21 +506,21 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: monotone
-    y_axes: [{label: Monthly Retention Rate, orientation: left, series: [{axisId: benchmarks_2_0_monthly_retention_core.monthly_retention,
-            id: Mobile - benchmarks_2_0_monthly_retention_core.monthly_retention, name: Mobile},
-          {axisId: benchmarks_2_0_monthly_retention_core.monthly_retention, id: Web - benchmarks_2_0_monthly_retention_core.monthly_retention,
+    y_axes: [{label: Monthly Retention Rate, orientation: left, series: [{axisId: braze_benchmarks_2_0_monthly_retention.monthly_retention,
+            id: Mobile - braze_benchmarks_2_0_monthly_retention.monthly_retention, name: Mobile},
+          {axisId: braze_benchmarks_2_0_monthly_retention.monthly_retention, id: Web - braze_benchmarks_2_0_monthly_retention.monthly_retention,
             name: Web}], showLabels: true, showValues: true, valueFormat: '', unpinAxis: false,
         tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_label: Month
     series_types: {}
     series_colors:
-      web - benchmarks_2_0_monthly_retention_core.monthly_retention: "#f7918f"
-      mobile - benchmarks_2_0_monthly_retention_core.monthly_retention: "#3accdd"
-      Mobile - benchmarks_2_0_monthly_retention_core.monthly_retention: "#3accdd"
-      Web - benchmarks_2_0_monthly_retention_core.monthly_retention: "#f7918f"
+      web - braze_benchmarks_2_0_monthly_retention.monthly_retention: "#f7918f"
+      mobile - braze_benchmarks_2_0_monthly_retention.monthly_retention: "#3accdd"
+      Mobile - braze_benchmarks_2_0_monthly_retention.monthly_retention: "#3accdd"
+      Web - braze_benchmarks_2_0_monthly_retention.monthly_retention: "#f7918f"
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_monthly_retention_core.industry
+      Industry: braze_benchmarks_2_0_monthly_retention.industry
     row: 48
     col: 12
     width: 12
@@ -530,12 +530,12 @@
     note_display: hover
     note_text: Total Conversions (with purchase criteria) / Daily Unique Recipients
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
+    explore: braze_benchmarks_2_0_365
     type: single_value
-    fields: [benchmarks_2_0_365_core.purchase_conversion_rate, benchmarks_2_0_365_core.industry]
+    fields: [braze_benchmarks_2_0_365.purchase_conversion_rate, braze_benchmarks_2_0_365.industry]
     filters:
-      benchmarks_2_0_365_core.purchase_conversion_rate: ">0"
-    sorts: [benchmarks_2_0_365_core.industry]
+      braze_benchmarks_2_0_365.purchase_conversion_rate: ">0"
+    sorts: [braze_benchmarks_2_0_365.industry]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -551,7 +551,7 @@
     series_types: {}
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_365_core.industry
+      Industry: braze_benchmarks_2_0_365.industry
     row: 59
     col: 0
     width: 8
@@ -561,12 +561,12 @@
     note_display: hover
     note_text: Total conversions (with Used App criteria) / Daily Unique Recipients
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
+    explore: braze_benchmarks_2_0_365
     type: single_value
-    fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.used_app_conversion_rate]
+    fields: [braze_benchmarks_2_0_365.industry, braze_benchmarks_2_0_365.used_app_conversion_rate]
     filters:
-      benchmarks_2_0_365_core.used_app_conversion_rate: ">0"
-    sorts: [benchmarks_2_0_365_core.industry]
+      braze_benchmarks_2_0_365.used_app_conversion_rate: ">0"
+    sorts: [braze_benchmarks_2_0_365.industry]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -582,7 +582,7 @@
     series_types: {}
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_365_core.industry
+      Industry: braze_benchmarks_2_0_365.industry
     row: 38
     col: 0
     width: 24
@@ -592,12 +592,12 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_365_core
+    explore: braze_benchmarks_2_0_365
     type: single_value
-    fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.web_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_365.industry, braze_benchmarks_2_0_365.web_push_total_open_rate]
     filters:
-      benchmarks_2_0_365_core.web_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_365_core.industry]
+      braze_benchmarks_2_0_365.web_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_365.industry]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -625,7 +625,7 @@
     defaults_version: 1
     series_types: {}
     listen:
-      Industry: benchmarks_2_0_365_core.industry
+      Industry: braze_benchmarks_2_0_365.industry
     row: 6
     col: 16
     width: 8
@@ -635,12 +635,12 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_monthly_core
+    explore: braze_benchmarks_2_0_monthly
     type: looker_area
-    fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.web_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.web_push_total_open_rate]
     filters:
-      benchmarks_2_0_monthly_core.web_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_monthly_core.month]
+      braze_benchmarks_2_0_monthly.web_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_monthly.month]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: true
@@ -672,12 +672,12 @@
     totals_color: "#808080"
     series_types: {}
     series_colors:
-      benchmarks_2_0_monthly_core.web_push_total_open_rate: "#3accdd"
+      braze_benchmarks_2_0_monthly.web_push_total_open_rate: "#3accdd"
     x_axis_datetime_label: "%B %Y"
     x_axis_label_rotation: -45
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_monthly_core.industry
+      Industry: braze_benchmarks_2_0_monthly.industry
     row: 16
     col: 16
     width: 8
@@ -687,12 +687,12 @@
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_dow_core
+    explore: braze_benchmarks_2_0_dow
     type: looker_column
-    fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.web_push_total_open_rate]
+    fields: [braze_benchmarks_2_0_dow.dow_name, braze_benchmarks_2_0_dow.web_push_total_open_rate]
     filters:
-      benchmarks_2_0_dow_core.web_push_total_open_rate: ">0"
-    sorts: [benchmarks_2_0_dow_core.dow_name]
+      braze_benchmarks_2_0_dow.web_push_total_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_dow.dow_name]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: false
@@ -724,10 +724,10 @@
     totals_color: "#808080"
     series_types: {}
     series_colors:
-      benchmarks_2_0_dow_core.web_push_total_open_rate: "#3accdd"
+      braze_benchmarks_2_0_dow.web_push_total_open_rate: "#3accdd"
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_dow_core.industry
+      Industry: braze_benchmarks_2_0_dow.industry
     row: 8
     col: 16
     width: 8
@@ -737,13 +737,13 @@
     note_display: hover
     note_text: Email Unique Open Rate = Email Unique Opens / Email Deliveries, Email Unique Click Rate = Email Unique Clicks / Email Deliveries
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_monthly_core
+    explore: braze_benchmarks_2_0_monthly
     type: looker_area
-    fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.email_unique_click_rate,
-      benchmarks_2_0_monthly_core.email_unique_open_rate]
+    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.email_unique_click_rate,
+      braze_benchmarks_2_0_monthly.email_unique_open_rate]
     filters:
-      benchmarks_2_0_monthly_core.email_unique_open_rate: ">0"
-    sorts: [benchmarks_2_0_monthly_core.month]
+      braze_benchmarks_2_0_monthly.email_unique_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_monthly.month]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: true
@@ -773,21 +773,21 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: benchmarks_2_0_monthly_core.email_unique_click_rate,
-            id: benchmarks_2_0_monthly_core.email_unique_click_rate, name: Email Unique
-              Click Rate}, {axisId: benchmarks_2_0_monthly_core.email_unique_open_rate,
-            id: benchmarks_2_0_monthly_core.email_unique_open_rate, name: Email Unique
+    y_axes: [{label: '', orientation: left, series: [{axisId: braze_benchmarks_2_0_monthly.email_unique_click_rate,
+            id: braze_benchmarks_2_0_monthly.email_unique_click_rate, name: Email Unique
+              Click Rate}, {axisId: braze_benchmarks_2_0_monthly.email_unique_open_rate,
+            id: braze_benchmarks_2_0_monthly.email_unique_open_rate, name: Email Unique
               Open Rate}], showLabels: true, showValues: true, minValue: !!null '',
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     series_types: {}
     series_colors:
-      benchmarks_2_0_monthly_core.email_unique_open_rate: "#ff944a"
-      benchmarks_2_0_monthly_core.email_unique_click_rate: "#ffba4b"
+      braze_benchmarks_2_0_monthly.email_unique_open_rate: "#ff944a"
+      braze_benchmarks_2_0_monthly.email_unique_click_rate: "#ffba4b"
     x_axis_datetime_label: "%B %Y"
     x_axis_label_rotation: -45
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_monthly_core.industry
+      Industry: braze_benchmarks_2_0_monthly.industry
     row: 28
     col: 12
     width: 12
@@ -815,12 +815,12 @@
     note_display: hover
     note_text: Email Unique Open Rate = Email Unique Opens / Email Deliveries
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_dow_core
+    explore: braze_benchmarks_2_0_dow
     type: looker_column
-    fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.email_unique_open_rate]
+    fields: [braze_benchmarks_2_0_dow.dow_name, braze_benchmarks_2_0_dow.email_unique_open_rate]
     filters:
-      benchmarks_2_0_dow_core.email_unique_open_rate: ">0"
-    sorts: [benchmarks_2_0_dow_core.dow_name]
+      braze_benchmarks_2_0_dow.email_unique_open_rate: ">0"
+    sorts: [braze_benchmarks_2_0_dow.dow_name]
     limit: 500
     query_timezone: America/New_York
     x_axis_gridlines: false
@@ -852,10 +852,10 @@
     totals_color: "#808080"
     series_types: {}
     series_colors:
-      benchmarks_2_0_dow_core.email_unique_open_rate: "#ff944a"
+      braze_benchmarks_2_0_dow.email_unique_open_rate: "#ff944a"
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_dow_core.industry
+      Industry: braze_benchmarks_2_0_dow.industry
     row: 28
     col: 0
     width: 12
@@ -919,14 +919,14 @@
     note_display: hover
     note_text: Number of users in a cohort who made a purchase in monthly range n / number of users who made a first purchase in months 0 - 2
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_purchase_retention_core
+    explore: braze_benchmarks_2_0_purchase_retention
     type: looker_line
-    fields: [benchmarks_2_0_purchase_retention_core.month_num, benchmarks_2_0_purchase_retention_core.purchase_retention,
-      benchmarks_2_0_purchase_retention_core.app_type]
-    pivots: [benchmarks_2_0_purchase_retention_core.app_type]
+    fields: [braze_benchmarks_2_0_purchase_retention.month_num, braze_benchmarks_2_0_purchase_retention.purchase_retention,
+      braze_benchmarks_2_0_purchase_retention.app_type]
+    pivots: [braze_benchmarks_2_0_purchase_retention.app_type]
     filters:
-      benchmarks_2_0_purchase_retention_core.month_num: "-12 or Above,-0"
-    sorts: [benchmarks_2_0_purchase_retention_core.purchase_retention desc 0, benchmarks_2_0_purchase_retention_core.app_type]
+      braze_benchmarks_2_0_purchase_retention.month_num: "-12 or Above,-0"
+    sorts: [braze_benchmarks_2_0_purchase_retention.purchase_retention desc 0, braze_benchmarks_2_0_purchase_retention.app_type]
     limit: 500
     column_limit: 50
     query_timezone: America/New_York
@@ -954,10 +954,10 @@
     y_axis_combined: true
     show_null_points: false
     interpolation: monotone
-    y_axes: [{label: Purchase Retention Rate, orientation: left, series: [{axisId: benchmarks_2_0_purchase_retention_core.purchase_retention,
-            id: Mobile - benchmarks_2_0_purchase_retention_core.purchase_retention, name: Mobile},
-          {axisId: benchmarks_2_0_purchase_retention_core.purchase_retention, id: Web -
-              benchmarks_2_0_purchase_retention_core.purchase_retention, name: Web}], showLabels: true,
+    y_axes: [{label: Purchase Retention Rate, orientation: left, series: [{axisId: braze_benchmarks_2_0_purchase_retention.purchase_retention,
+            id: Mobile - braze_benchmarks_2_0_purchase_retention.purchase_retention, name: Mobile},
+          {axisId: braze_benchmarks_2_0_purchase_retention.purchase_retention, id: Web -
+              braze_benchmarks_2_0_purchase_retention.purchase_retention, name: Web}], showLabels: true,
         showValues: true, unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
         type: linear}]
     x_axis_label: Months Retained
@@ -966,12 +966,12 @@
       first_last: first
       num_rows: '1'
     series_colors:
-      Web - benchmarks_2_0_purchase_retention_core.purchase_retention: "#f7918f"
-      Mobile - benchmarks_2_0_purchase_retention_core.purchase_retention: "#3accdd"
+      Web - braze_benchmarks_2_0_purchase_retention.purchase_retention: "#f7918f"
+      Mobile - braze_benchmarks_2_0_purchase_retention.purchase_retention: "#3accdd"
     discontinuous_nulls: false
     defaults_version: 1
     listen:
-      Industry: benchmarks_2_0_purchase_retention_core.industry
+      Industry: braze_benchmarks_2_0_purchase_retention.industry
     row: 68
     col: 0
     width: 24
@@ -981,13 +981,13 @@
     note_display: hover
     note_text: Sum of days between a user's first session and their first purchase / unique user count
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_avg_time_to_purchase_core
+    explore: braze_benchmarks_2_0_avg_time_to_purchase
     type: single_value
-    fields: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers, benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers,
-      benchmarks_2_0_avg_time_to_purchase_core.industry]
+    fields: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers, braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers,
+      braze_benchmarks_2_0_avg_time_to_purchase.industry]
     filters: {}
-    sorts: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase desc]
+    sorts: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase desc]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -1000,13 +1000,13 @@
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
     single_value_title: average time to purchase
-    hidden_fields: [benchmarks_2_0_avg_time_to_purchase_core.industry, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers, benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers]
+    hidden_fields: [braze_benchmarks_2_0_avg_time_to_purchase.industry, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers, braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers]
     show_view_names: false
     defaults_version: 1
     series_types: {}
     listen:
-      Industry: benchmarks_2_0_avg_time_to_purchase_core.industry
+      Industry: braze_benchmarks_2_0_avg_time_to_purchase.industry
     row: 59
     col: 8
     width: 8
@@ -1016,13 +1016,13 @@
     note_display: hover
     note_text: Sum of days between a user's first purchase and their second purchase / unique user count
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_avg_time_to_purchase_core
+    explore: braze_benchmarks_2_0_avg_time_to_purchase
     type: single_value
-    fields: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers, benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers,
-      benchmarks_2_0_avg_time_to_purchase_core.industry]
+    fields: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers, braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers,
+      braze_benchmarks_2_0_avg_time_to_purchase.industry]
     filters: {}
-    sorts: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase desc]
+    sorts: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase desc]
     limit: 500
     query_timezone: America/New_York
     custom_color_enabled: true
@@ -1035,13 +1035,13 @@
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
     single_value_title: average time to second purchase
-    hidden_fields: [benchmarks_2_0_avg_time_to_purchase_core.industry, benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers,
-      benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase]
+    hidden_fields: [braze_benchmarks_2_0_avg_time_to_purchase.industry, braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers,
+      braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase]
     show_view_names: false
     defaults_version: 1
     series_types: {}
     listen:
-      Industry: benchmarks_2_0_avg_time_to_purchase_core.industry
+      Industry: braze_benchmarks_2_0_avg_time_to_purchase.industry
     row: 59
     col: 16
     width: 8
@@ -1051,17 +1051,17 @@
     note_display: hover
     note_text: Unique count of buyers making 2+ purchases / unique count of first-time purchasers
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_avg_time_to_purchase_core
+    explore: braze_benchmarks_2_0_avg_time_to_purchase
     type: liquid_fill_gauge
-    fields: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers, benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers,
-      benchmarks_2_0_avg_time_to_purchase_core.industry]
+    fields: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers, braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers,
+      braze_benchmarks_2_0_avg_time_to_purchase.industry]
     filters: {}
-    sorts: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase desc]
+    sorts: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase desc]
     limit: 500
     query_timezone: America/New_York
-    hidden_fields: [benchmarks_2_0_avg_time_to_purchase_core.industry, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase, benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers]
+    hidden_fields: [braze_benchmarks_2_0_avg_time_to_purchase.industry, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase, braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers]
     hidden_points_if_no: []
     series_labels: {}
     show_view_names: false
@@ -1189,7 +1189,7 @@
     map: usa
     map_projection: ''
     listen:
-      Industry: benchmarks_2_0_avg_time_to_purchase_core.industry
+      Industry: braze_benchmarks_2_0_avg_time_to_purchase.industry
     row: 61
     col: 12
     width: 12
@@ -1199,17 +1199,17 @@
     note_display: hover
     note_text: Unique count of first-time purchasers / unique count of new users
     model: block_braze_benchmarks_2_0
-    explore: benchmarks_2_0_avg_time_to_purchase_core
+    explore: braze_benchmarks_2_0_avg_time_to_purchase
     type: liquid_fill_gauge
-    fields: [benchmarks_2_0_avg_time_to_purchase_core.industry, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase, benchmarks_2_0_avg_time_to_purchase_core.pct_first_time_buyers,
-      benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers]
+    fields: [braze_benchmarks_2_0_avg_time_to_purchase.industry, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase, braze_benchmarks_2_0_avg_time_to_purchase.pct_first_time_buyers,
+      braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers]
     filters: {}
-    sorts: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase desc]
+    sorts: [braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase desc]
     limit: 500
     query_timezone: America/New_York
-    hidden_fields: [benchmarks_2_0_avg_time_to_purchase_core.industry, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase,
-      benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase, benchmarks_2_0_avg_time_to_purchase_core.pct_repeat_buyers]
+    hidden_fields: [braze_benchmarks_2_0_avg_time_to_purchase.industry, braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_purchase,
+      braze_benchmarks_2_0_avg_time_to_purchase.avg_time_to_second_purchase, braze_benchmarks_2_0_avg_time_to_purchase.pct_repeat_buyers]
     hidden_points_if_no: []
     series_labels: {}
     show_view_names: false
@@ -1337,22 +1337,22 @@
     map: usa
     map_projection: ''
     listen:
-      Industry: benchmarks_2_0_avg_time_to_purchase_core.industry
+      Industry: braze_benchmarks_2_0_avg_time_to_purchase.industry
     row: 61
     col: 0
     width: 12
     height: 7
-#   filters:
-#   - name: Industry
-#     title: Industry
-#     type: field_filter
-#     default_value: All Industries
-#     allow_multiple_values: true
-#     required: true
-#     ui_config:
-#       type: dropdown_menu
-#       display: popover
-#     model: block_braze_benchmarks_2_0
-#     explore: benchmarks_2_0_365_core
-#     listens_to_filters: []
-#     field: benchmarks_2_0_365_core.industry
+  filters:
+  - name: Industry
+    title: Industry
+    type: field_filter
+    default_value: All Industries
+    allow_multiple_values: true
+    required: true
+    ui_config:
+      type: dropdown_menu
+      display: popover
+    model: block_braze_benchmarks_2_0
+    explore: braze_benchmarks_2_0_365
+    listens_to_filters: []
+    field: braze_benchmarks_2_0_365.industry
