@@ -1,4 +1,4 @@
-connection: "staging_benchmarks"
+connection: "@{CONNECTION_NAME}"
 
 include: "*.view.lkml"
 include: "*.explore.lkml"

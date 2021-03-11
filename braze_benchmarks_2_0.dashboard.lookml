@@ -7,7 +7,7 @@
     name: Android Push Total Open Rate (Single Value)
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_365_core
     type: single_value
     fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.android_push_total_open_rate]
@@ -50,7 +50,7 @@
     name: Android Push Total Open Rate by Month
     note_display: hover
     note_text: Push Direct Open Rate = Push Direct Opens/(Push Total Sends - Push Bounces), Push Influenced Open Rate = Push Influenced Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_monthly_core
     type: looker_area
     fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.android_push_direct_open_rate,
@@ -109,7 +109,7 @@
     name: Android Push Total Open Rate Day of Week
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_dow_core
     type: looker_column
     fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.android_push_total_open_rate]
@@ -163,7 +163,7 @@
     name: Classic Retention
     note_display: hover
     note_text: Number of users who opened the app on day n after day 0 / the number of users who opened the app on day 0
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_daily_retention_core
     type: looker_line
     fields: [benchmarks_2_0_daily_retention_core.app_type, benchmarks_2_0_daily_retention_core.day_num,
@@ -220,7 +220,7 @@
     name: Email Unique Open Rate
     note_display: hover
     note_text: Email Unique Opens / Email Deliveries
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_365_core
     type: single_value
     fields: [benchmarks_2_0_365_core.email_unique_open_rate, benchmarks_2_0_365_core.industry]
@@ -263,7 +263,7 @@
     name: iOS Push by Day of Week
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_dow_core
     type: looker_column
     fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.ios_push_total_open_rate]
@@ -315,7 +315,7 @@
     name: iOS Push by Month
     note_display: hover
     note_text: Push Direct Open Rate = Push Direct Opens/(Push Total Sends - Push Bounces), Push Influenced Open Rate = Push Influenced Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_monthly_core
     type: looker_area
     fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.ios_push_direct_open_rate,
@@ -375,7 +375,7 @@
     name: iOS Push Total Open Rate (Single Value)
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_365_core
     type: single_value
     fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.ios_push_total_open_rate]
@@ -416,7 +416,7 @@
     height: 2
   - title: Mobile vs Web User Acquisition
     name: Mobile vs Web User Acquisition
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     note_display: hover
     note_text: A unique count of users grouped by the platform that each user engaged with on the first day of their app use
     explore: benchmarks_2_0_user_acquisition_core
@@ -471,7 +471,7 @@
     name: Monthly Retention
     note_display: hover
     note_text: Number of users in a cohort who opened the app at least once during month n / the number of users who first used the app during month 0
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_monthly_retention_core
     type: looker_line
     fields: [benchmarks_2_0_monthly_core_retention.month_num, benchmarks_2_0_monthly_retention_core.monthly_retention,
@@ -529,7 +529,7 @@
     name: Purchase Conversion Rate (Single Value)
     note_display: hover
     note_text: Total Conversions (with purchase criteria) / Daily Unique Recipients
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_365_core
     type: single_value
     fields: [benchmarks_2_0_365_core.purchase_conversion_rate, benchmarks_2_0_365_core.industry]
@@ -560,7 +560,7 @@
     name: Used App Conversion Rate (Single Value)
     note_display: hover
     note_text: Total conversions (with Used App criteria) / Daily Unique Recipients
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_365_core
     type: single_value
     fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.used_app_conversion_rate]
@@ -591,7 +591,7 @@
     name: Web Push Total Open Rate (Single Value)
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_365_core
     type: single_value
     fields: [benchmarks_2_0_365_core.industry, benchmarks_2_0_365_core.web_push_total_open_rate]
@@ -634,7 +634,7 @@
     name: Web Push Total Open Rate by Month
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_monthly_core
     type: looker_area
     fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.web_push_total_open_rate]
@@ -686,7 +686,7 @@
     name: Web Push Total Open Rate Day of Week
     note_display: hover
     note_text: Push Total Open Rate = Push Total Opens/(Push Total Sends - Push Bounces)
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_dow_core
     type: looker_column
     fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.web_push_total_open_rate]
@@ -736,7 +736,7 @@
     name: Email Rates Monthly
     note_display: hover
     note_text: Email Unique Open Rate = Email Unique Opens / Email Deliveries, Email Unique Click Rate = Email Unique Clicks / Email Deliveries
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_monthly_core
     type: looker_area
     fields: [benchmarks_2_0_monthly_core.month, benchmarks_2_0_monthly_core.email_unique_click_rate,
@@ -814,7 +814,7 @@
     name: Email Unique Open Rate Day of Week
     note_display: hover
     note_text: Email Unique Open Rate = Email Unique Opens / Email Deliveries
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_dow_core
     type: looker_column
     fields: [benchmarks_2_0_dow_core.dow_name, benchmarks_2_0_dow_core.email_unique_open_rate]
@@ -918,7 +918,7 @@
     name: Monthly Purchase
     note_display: hover
     note_text: Number of users in a cohort who made a purchase in monthly range n / number of users who made a first purchase in months 0 - 2
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_purchase_retention_core
     type: looker_line
     fields: [benchmarks_2_0_purchase_retention_core.month_num, benchmarks_2_0_purchase_retention_core.purchase_retention,
@@ -980,7 +980,7 @@
     name: Average Time to Purchase (Single Value)
     note_display: hover
     note_text: Sum of days between a user's first session and their first purchase / unique user count
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_avg_time_to_purchase_core
     type: single_value
     fields: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
@@ -1015,7 +1015,7 @@
     name: Average Time to Second Purchase (Single Value)
     note_display: hover
     note_text: Sum of days between a user's first purchase and their second purchase / unique user count
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_avg_time_to_purchase_core
     type: single_value
     fields: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
@@ -1050,7 +1050,7 @@
     name: Repeat Buyer %
     note_display: hover
     note_text: Unique count of buyers making 2+ purchases / unique count of first-time purchasers
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_avg_time_to_purchase_core
     type: liquid_fill_gauge
     fields: [benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_second_purchase,
@@ -1198,7 +1198,7 @@
     name: First Time Buyer %
     note_display: hover
     note_text: Unique count of first-time purchasers / unique count of new users
-    model: block_benchmarks_2_0
+    model: block_braze_benchmarks_2_0
     explore: benchmarks_2_0_avg_time_to_purchase_core
     type: liquid_fill_gauge
     fields: [benchmarks_2_0_avg_time_to_purchase_core.industry, benchmarks_2_0_avg_time_to_purchase_core.avg_time_to_purchase,
@@ -1352,7 +1352,7 @@
 #     ui_config:
 #       type: dropdown_menu
 #       display: popover
-#     model: block_benchmarks_2_0
+#     model: block_braze_benchmarks_2_0
 #     explore: benchmarks_2_0_365_core
 #     listens_to_filters: []
 #     field: benchmarks_2_0_365_core.industry
