@@ -5,7 +5,7 @@ explore: braze_benchmarks_2_0_monthly_core {
   label: "Engagement Benchmarks Monthly"
   extension: required
   conditionally_filter: {
-    filters: [braze_benchmarks_2_0_monthly.industry: "All Industries"]
+    filters: [braze_benchmarks_2_0_monthly.industry: "-All Industries,Other"]
     unless: [braze_benchmarks_2_0_monthly.industry]
   }
 }

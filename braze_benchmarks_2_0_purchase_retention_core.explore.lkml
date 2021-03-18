@@ -5,7 +5,7 @@ explore: braze_benchmarks_2_0_purchase_retention_core {
   label: "Purchase Retention Benchmarks"
   extension: required
   conditionally_filter: {
-    filters: [braze_benchmarks_2_0_purchase_retention.industry: "All Industries"]
+    filters: [braze_benchmarks_2_0_purchase_retention.industry: "-All Industries,Other"]
     unless: [braze_benchmarks_2_0_purchase_retention.industry]
   }
 }

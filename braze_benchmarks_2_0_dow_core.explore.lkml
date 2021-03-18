@@ -5,7 +5,7 @@ explore: braze_benchmarks_2_0_dow_core {
   label: "Engagement Benchmarks Day of Week"
   extension: required
   conditionally_filter: {
-    filters: [braze_benchmarks_2_0_dow.industry: "All Industries"]
+    filters: [braze_benchmarks_2_0_dow.industry: "-All Industries,Other"]
     unless: [braze_benchmarks_2_0_dow.industry]
   }
 }

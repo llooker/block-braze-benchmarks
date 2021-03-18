@@ -5,7 +5,7 @@ explore: braze_benchmarks_2_0_monthly_retention_core {
   label: "Monthly Retention Benchmarks"
   extension: required
   conditionally_filter: {
-    filters: [braze_benchmarks_2_0_monthly_retention.industry: "All Industries"]
+    filters: [braze_benchmarks_2_0_monthly_retention.industry: "-All Industries,Other"]
     unless: [braze_benchmarks_2_0_monthly_retention.industry]
   }
 }

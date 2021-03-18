@@ -5,7 +5,7 @@ explore: braze_benchmarks_2_0_avg_time_to_purchase_core {
   label: "Average Time to Purchase Benchmarks"
   extension: required
   conditionally_filter: {
-    filters: [braze_benchmarks_2_0_avg_time_to_purchase.industry: "All Industries"]
+    filters: [braze_benchmarks_2_0_avg_time_to_purchase.industry: "-All Industries,Other"]
     unless: [braze_benchmarks_2_0_avg_time_to_purchase.industry]
   }
 }

@@ -5,7 +5,7 @@ explore: braze_benchmarks_2_0_365_core {
   label: "Engagement Benchmarks 365"
   extension: required
   conditionally_filter: {
-    filters: [braze_benchmarks_2_0_365.industry: "All Industries"]
+    filters: [braze_benchmarks_2_0_365.industry: "-All Industries,Other"]
     unless: [braze_benchmarks_2_0_365.industry]
   }
 }
