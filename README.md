@@ -16,15 +16,15 @@ This block assumes:
 <h2 style="padding-bottom:0px;color:#303030;font-weight:500">Dashboards in this Block</h2>
 <h4 style="padding-bottom:0px;color:#303030;font-weight:500">Braze Benchmarks Dashboard</h4>
 <p style="font-weight: 300">
-The Braze Benchmarks dashboard will provide a view that is dynamic and mimics the functionality of our public Benchmarks product, switching out the data based on the metric selected.
+The Braze Benchmarks dashboard will provide a view that allows you to see a variety of metrics cut by different timeframes including retention, engagment, and purchasing stats. All metrics are based of the past 365 days,and are refreshed daily.
 </p>
-<h4 style="padding-bottom:0px;color:#303030;font-weight:500">MoM Industry Trends Dashboard</h4>
+<h4 style="padding-bottom:0px;color:#303030;font-weight:500">12 Month Trends Dashboard</h4>
 <p style="font-weight: 300">
 The MoM Trends dashboard will allow the user to view industry engagement trends over the past 12 months for each available Benchmarks metric, side by side for easy viewing and joining.
 </p>
-<h4 style="padding-bottom:0px;color:#303030;font-weight:500">Trends by Industry Dashboard</h4>
+<h4 style="padding-bottom:0px;color:#303030;font-weight:500">365 Trends Dashboard</h4>
 <p style="font-weight: 300">
-The Trends by Industry dashboard compares engagement over time industry-by-industry in a stacked view, so one can view the market as a whole month-over-month.
+The Trends by Industry dashboard compares engagement over time industry-by-industry in a stacked view for each available Benchmarks metric, side by side for easy viewing and joining.
 </p>
 <h2 style="padding-bottom:0px;color:#303030;font-weight:500">Implementation</h2>
 <h4 style="padding-bottom:0px;color:#303030;font-weight:500">Looker User</h4>
