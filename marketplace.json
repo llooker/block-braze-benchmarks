@@ -30,7 +30,7 @@
 "auxiliary_projects": [
     {
       "git_uri": "git://github.com/llooker/block-braze-benchmarks-config.git",
-      "git_ref": "54e0c04fa622625c1dfce0dfd9a3079b099ca62e",
+      "git_ref": "8df76ec86e7dae76d1f1c1b049d00c5357223ff9",
       "label": "Braze Benchmarks Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }
