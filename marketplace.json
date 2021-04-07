@@ -23,7 +23,7 @@
 },
 "models": [
   {
-    "name": "block_braze_benchmarks",
+    "name": "block_braze_benchmarks_2_0",
     "connection_constant": "CONNECTION_NAME"
   }
 ],
