@@ -32,6 +32,7 @@ view: braze_benchmarks_2_0_monthly_retention_core {
     type: string
     sql: CONCAT(${month_num},${app_type},${industry}) ;;
     primary_key: yes
+    hidden: yes
     label: "Primary Key"
     view_label: "Monthly Retention Benchmarks"
   }
