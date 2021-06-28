@@ -568,6 +568,7 @@
       braze_benchmarks_2_0_daily_retention.day_num]
     pivots: [braze_benchmarks_2_0_daily_retention.industry]
     filters:
+      braze_benchmarks_2_0_daily_retention.industry: "-All Industries,-Other"
       braze_benchmarks_2_0_daily_retention.day_num: '1,3,7,14,21,30,60,90'
       braze_benchmarks_2_0_daily_retention.app_type: Mobile
     sorts: [braze_benchmarks_2_0_daily_retention.industry 0, braze_benchmarks_2_0_daily_retention.day_num]
