@@ -1,0 +1,38 @@
+{
+  "label": "Benchmarks by Braze",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/braze_icon.png",
+    "tagline": "This Looker Block provides dashboards that mimic the functionality of the Braze Benchmarks industry benchmarks product. This Block works with the Snowflake Data Share to provide more flexible analysis, enable internal data joins to aggregated industry data, help set alerting thresholds, and facilitate what-if projection."
+  },
+
+"constants": {
+  "CONNECTION_NAME": {
+    "label": "Connection Name",
+    "value_constraint": "connection"
+  },
+  "CONFIG_PROJECT_NAME": {
+    "label": "Config Project Name"
+  },
+  "DATABASE_NAME": {
+    "label": "Benchmarks Database"
+  },
+  "SCHEMA_NAME": {
+    "label": "Benchmarks Schema"
+  }
+},
+"models": [
+  {
+    "name": "block_braze_benchmarks_2_0",
+    "connection_constant": "CONNECTION_NAME"
+  }
+],
+"auxiliary_projects": [
+    {
+      "git_uri": "git://github.com/llooker/block-braze-benchmarks-config.git",
+      "git_ref": "8df76ec86e7dae76d1f1c1b049d00c5357223ff9",
+      "label": "Braze Benchmarks Config",
+      "constant_name": "CONFIG_PROJECT_NAME"
+    }
+  ]
+}
