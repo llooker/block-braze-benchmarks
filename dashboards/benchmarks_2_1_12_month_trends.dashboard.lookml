@@ -41,16 +41,16 @@
     height: 2
   - title: Android Push Total Open Rate
     name: Android Push Total Open Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.android_push_total_open_rate,
-      braze_benchmarks_2_0_monthly.industry]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.android_push_total_open_rate,
+      braze_benchmarks_2_1_monthly.industry]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -89,16 +89,16 @@
     height: 9
   - title: Used App Conversion Rate
     name: Used App Conversion Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.used_app_conversion_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.used_app_conversion_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -138,16 +138,16 @@
     height: 10
   - title: iOS Push Total Open Rate
     name: iOS Push Total Open Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.ios_push_total_open_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.ios_push_total_open_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -186,16 +186,16 @@
     height: 8
   - title: Web Push Total Open Rate
     name: Web Push Total Open Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.web_push_total_open_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.web_push_total_open_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -234,16 +234,16 @@
     height: 9
   - title: Email Unique Open Rate
     name: Email Unique Open Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.email_unique_open_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.email_unique_open_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -282,16 +282,16 @@
     height: 9
   - title: Purchase Conversion Rate
     name: Purchase Conversion Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.purchase_conversion_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.purchase_conversion_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -331,16 +331,16 @@
     height: 10
   - title: Android Push Direct Open Rate
     name: Android Push Direct Open Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.android_push_direct_open_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.android_push_direct_open_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -380,16 +380,16 @@
     height: 9
   - title: Email Unique Click Rate
     name: Email Unique Click Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.email_unique_click_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.email_unique_click_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -429,16 +429,16 @@
     height: 9
   - title: iOS Push Direct Open Rate
     name: iOS Push Direct Open Rate
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly.month, braze_benchmarks_2_0_monthly.industry,
-      braze_benchmarks_2_0_monthly.ios_push_direct_open_rate]
-    pivots: [braze_benchmarks_2_0_monthly.industry]
-    fill_fields: [braze_benchmarks_2_0_monthly.month]
+    fields: [braze_benchmarks_2_1_monthly.month, braze_benchmarks_2_1_monthly.industry,
+      braze_benchmarks_2_1_monthly.ios_push_direct_open_rate]
+    pivots: [braze_benchmarks_2_1_monthly.industry]
+    fill_fields: [braze_benchmarks_2_1_monthly.month]
     filters:
-      braze_benchmarks_2_0_monthly.industry: "-All Industries,-Other"
-    sorts: [braze_benchmarks_2_0_monthly.month desc, braze_benchmarks_2_0_monthly.industry]
+      braze_benchmarks_2_1_monthly.industry: "-All Industries,-Other"
+    sorts: [braze_benchmarks_2_1_monthly.month desc, braze_benchmarks_2_1_monthly.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -478,17 +478,17 @@
     height: 9
   - title: Monthly Retention - Mobile
     name: Monthly Retention - Mobile
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly_retention
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly_retention
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly_retention.monthly_retention, braze_benchmarks_2_0_monthly_retention.month_num,
-      braze_benchmarks_2_0_monthly_retention.industry]
-    pivots: [braze_benchmarks_2_0_monthly_retention.industry]
+    fields: [braze_benchmarks_2_1_monthly_retention.monthly_retention, braze_benchmarks_2_1_monthly_retention.month_num,
+      braze_benchmarks_2_1_monthly_retention.industry]
+    pivots: [braze_benchmarks_2_1_monthly_retention.industry]
     filters:
-      braze_benchmarks_2_0_monthly_retention.industry: "-All Industries,-Other"
-      braze_benchmarks_2_0_monthly_retention.app_type: Mobile
-      braze_benchmarks_2_0_monthly_retention.month_num: not 0
-    sorts: [braze_benchmarks_2_0_monthly_retention.monthly_retention desc 0, braze_benchmarks_2_0_monthly_retention.industry]
+      braze_benchmarks_2_1_monthly_retention.industry: "-All Industries,-Other"
+      braze_benchmarks_2_1_monthly_retention.app_type: Mobile
+      braze_benchmarks_2_1_monthly_retention.month_num: not 0
+    sorts: [braze_benchmarks_2_1_monthly_retention.monthly_retention desc 0, braze_benchmarks_2_1_monthly_retention.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -527,17 +527,17 @@
     height: 10
   - title: Purchase Retention - Web
     name: Purchase Retention - Web
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_purchase_retention
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_purchase_retention
     type: looker_line
-    fields: [braze_benchmarks_2_0_purchase_retention.purchase_retention, braze_benchmarks_2_0_purchase_retention.industry,
-      braze_benchmarks_2_0_purchase_retention.month_num]
-    pivots: [braze_benchmarks_2_0_purchase_retention.industry]
+    fields: [braze_benchmarks_2_1_purchase_retention.purchase_retention, braze_benchmarks_2_1_purchase_retention.industry,
+      braze_benchmarks_2_1_purchase_retention.month_num]
+    pivots: [braze_benchmarks_2_1_purchase_retention.industry]
     filters:
-      braze_benchmarks_2_0_purchase_retention.industry: "-All Industries,-Other"
-      braze_benchmarks_2_0_purchase_retention.month_num: "-0"
-      braze_benchmarks_2_0_purchase_retention.app_type: Web
-    sorts: [braze_benchmarks_2_0_purchase_retention.month_num, braze_benchmarks_2_0_purchase_retention.industry]
+      braze_benchmarks_2_1_purchase_retention.industry: "-All Industries,-Other"
+      braze_benchmarks_2_1_purchase_retention.month_num: "-0"
+      braze_benchmarks_2_1_purchase_retention.app_type: Web
+    sorts: [braze_benchmarks_2_1_purchase_retention.month_num, braze_benchmarks_2_1_purchase_retention.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -583,17 +583,17 @@
     height: 8
   - title: Monthly Retention - Web
     name: Monthly Retention - Web
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_monthly_retention
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_monthly_retention
     type: looker_line
-    fields: [braze_benchmarks_2_0_monthly_retention.monthly_retention, braze_benchmarks_2_0_monthly_retention.month_num,
-      braze_benchmarks_2_0_monthly_retention.industry]
-    pivots: [braze_benchmarks_2_0_monthly_retention.industry]
+    fields: [braze_benchmarks_2_1_monthly_retention.monthly_retention, braze_benchmarks_2_1_monthly_retention.month_num,
+      braze_benchmarks_2_1_monthly_retention.industry]
+    pivots: [braze_benchmarks_2_1_monthly_retention.industry]
     filters:
-      braze_benchmarks_2_0_monthly_retention.industry: "-All Industries,-Other"
-      braze_benchmarks_2_0_monthly_retention.app_type: Web
-      braze_benchmarks_2_0_monthly_retention.month_num: not 0
-    sorts: [braze_benchmarks_2_0_monthly_retention.monthly_retention desc 0, braze_benchmarks_2_0_monthly_retention.industry]
+      braze_benchmarks_2_1_monthly_retention.industry: "-All Industries,-Other"
+      braze_benchmarks_2_1_monthly_retention.app_type: Web
+      braze_benchmarks_2_1_monthly_retention.month_num: not 0
+    sorts: [braze_benchmarks_2_1_monthly_retention.monthly_retention desc 0, braze_benchmarks_2_1_monthly_retention.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -632,17 +632,17 @@
     height: 10
   - title: Purchase Retention - Mobile
     name: Purchase Retention - Mobile
-    model: block_braze_benchmarks_2_0
-    explore: braze_benchmarks_2_0_purchase_retention
+    model: block_braze_benchmarks_2_1
+    explore: braze_benchmarks_2_1_purchase_retention
     type: looker_line
-    fields: [braze_benchmarks_2_0_purchase_retention.purchase_retention, braze_benchmarks_2_0_purchase_retention.industry,
-      braze_benchmarks_2_0_purchase_retention.month_num]
-    pivots: [braze_benchmarks_2_0_purchase_retention.industry]
+    fields: [braze_benchmarks_2_1_purchase_retention.purchase_retention, braze_benchmarks_2_1_purchase_retention.industry,
+      braze_benchmarks_2_1_purchase_retention.month_num]
+    pivots: [braze_benchmarks_2_1_purchase_retention.industry]
     filters:
-      braze_benchmarks_2_0_purchase_retention.industry: "-All Industries,-Other"
-      braze_benchmarks_2_0_purchase_retention.month_num: "-0"
-      braze_benchmarks_2_0_purchase_retention.app_type: Mobile
-    sorts: [braze_benchmarks_2_0_purchase_retention.month_num, braze_benchmarks_2_0_purchase_retention.industry]
+      braze_benchmarks_2_1_purchase_retention.industry: "-All Industries,-Other"
+      braze_benchmarks_2_1_purchase_retention.month_num: "-0"
+      braze_benchmarks_2_1_purchase_retention.app_type: Mobile
+    sorts: [braze_benchmarks_2_1_purchase_retention.month_num, braze_benchmarks_2_1_purchase_retention.industry]
     limit: 500
     x_axis_gridlines: false
     y_axis_gridlines: true

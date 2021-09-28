@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_avg_time_to_purchase_config.view"
-
-view: braze_benchmarks_2_0_avg_time_to_purchase {
-  extends: [braze_benchmarks_2_0_avg_time_to_purchase_config]
-}
-
-view: braze_benchmarks_2_0_avg_time_to_purchase_core {
+view: braze_benchmarks_2_1_avg_time_to_purchase {
   sql_table_name: @{DATABASE_NAME}.@{SCHEMA_NAME}."BENCHMARKS_AVG_TIME_TO_PURCHASE";;
 
   dimension: industry {
