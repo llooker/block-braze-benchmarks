@@ -31,13 +31,17 @@ The Trends by Industry dashboard compares engagement over time industry-by-indus
 <p style="font-weight: 300">
 Once you have loaded your Benchmarks data into your data warehouse, you will need to create a Looker user for your database and grant it access to your Benchmarks tables.
 </p>
+<h4 style="padding-bottom:0px;color:#303030;font-weight:500">Customization</h4>
+<p style="font-weight: 300">
+Customizations of any aspect of the block can be implemented with Refinement files. For more information on using refinements to customize marketplace blocks, please see <a href="https://docs.looker.com/data-modeling/marketplace/customize-blocks">this documentation</a>.
+</p>
 <h4 style="padding-bottom:0px;color:#303030;font-weight:500">Connection Setup</h4>
 <p style="font-weight: 300">
 Create a new connection to the database that houses your Benchmarks data. Alter the connection: parameter in the Looker Model accordingly. Be sure to specify the proper timezones for your database and queries.
 </p>
 <h4 style="padding-bottom:0px;color:#303030;font-weight:500">Naming</h4>
 <p style="font-weight: 300">
-Be aware of different naming conventions. If you’ve customized any View/table or model names, rename each in the LookML to the name you’ve selected. You can use a global Find & Replace for this (top right corner search bar that says “Find & Replace in Project”).
+Be aware of different naming conventions. If you’ve customized any View/table or model names, use refinements to rename each in the LookML to the name you’ve selected.
 </p>
 <h2 style="padding-bottom:0px;color:#303030;font-weight:500">Additional Notes</h2>
 <p style="font-weight: 300">
@@ -47,7 +51,7 @@ The Braze Benchmarks Report 2021 examines anonymous aggregated mobile, web, and 
 </p>
 <h4 style="padding-bottom:0px;color:#303030;font-weight:500">SQL Dialect</h4>
 <p style="font-weight: 300">
-We built this Block using Snowflake as the data warehouse. If you are loading your data share into another warehouse, some SQL functions may differ in availability, syntax, or behavior across dialects.
+We built this Block using Snowflake as the data warehouse. If you are loading your data share into another warehouse, some SQL functions may differ in availability, syntax, or behavior across dialects. By using Refinements, the existing block can be tailored to your database environment.
 </p>
 <h4 style="padding-bottom:0px;color:#303030;font-weight:500">Content</h4>
 <p style="font-weight: 300">

@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_365_config.view"
-
-view: braze_benchmarks_2_0_365 {
-  extends: [braze_benchmarks_2_0_365_config]
-}
-
-view: braze_benchmarks_2_0_365_core {
+view: braze_benchmarks_2_1_365 {
   sql_table_name:@{DATABASE_NAME}.@{SCHEMA_NAME}."BRAZE_BENCHMARKS_365" ;;
 
   dimension: industry {

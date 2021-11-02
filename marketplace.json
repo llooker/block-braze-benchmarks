@@ -11,9 +11,6 @@
     "label": "Connection Name",
     "value_constraint": "connection"
   },
-  "CONFIG_PROJECT_NAME": {
-    "label": "Config Project Name"
-  },
   "DATABASE_NAME": {
     "label": "Benchmarks Database"
   },
@@ -23,16 +20,8 @@
 },
 "models": [
   {
-    "name": "block_braze_benchmarks_2_0",
+    "name": "block_braze_benchmarks_2_1",
     "connection_constant": "CONNECTION_NAME"
   }
-],
-"auxiliary_projects": [
-    {
-      "git_uri": "git://github.com/llooker/block-braze-benchmarks-config.git",
-      "git_ref": "8df76ec86e7dae76d1f1c1b049d00c5357223ff9",
-      "label": "Braze Benchmarks Config",
-      "constant_name": "CONFIG_PROJECT_NAME"
-    }
-  ]
+]
 }

@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_monthly_retention_config.view"
-
-view: braze_benchmarks_2_0_monthly_retention {
-  extends: [braze_benchmarks_2_0_monthly_retention_config]
-}
-
-view: braze_benchmarks_2_0_monthly_retention_core {
+view: braze_benchmarks_2_1_monthly_retention {
   sql_table_name: @{DATABASE_NAME}.@{SCHEMA_NAME}."BENCHMARKS_MONTHLY_RETENTION";;
 
   dimension: month_num {

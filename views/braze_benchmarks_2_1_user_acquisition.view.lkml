@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/braze_benchmarks_2_0_user_acquisition_config.view"
-
-view: braze_benchmarks_2_0_user_acquisition {
-  extends: [braze_benchmarks_2_0_user_acquisition_config]
-}
-
-view: braze_benchmarks_2_0_user_acquisition_core {
+view: braze_benchmarks_2_1_user_acquisition {
   sql_table_name:  @{DATABASE_NAME}.@{SCHEMA_NAME}."BENCHMARKS_USER_ACQUISITION";;
 
   dimension: industry {
